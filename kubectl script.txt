@@ -1,0 +1,15 @@
+kubectl apply -f J001_Deployment_PostgreSQL.yml
+kubectl apply -f J002_Service_LoadBalancer_PostgreSQL.yml
+
+kubectl apply -f J010_Deployment_Mongo.yml
+kubectl apply -f J011_Service_LoadBalancer_Mongo.yml
+
+kubectl apply -f J003_Deployment_CofigServer.yml
+kubectl apply -f J004_Service_LoadBalancer_Config.yml
+
+kubectl apply -f J005_Deployment_Auth.yml
+kubectl apply -f J006_Service_LoadBalancer_Auth.yml
+
+
+kubectl apply -f J008_Deployment_User.yml
+kubectl apply -f J009_Service_LoadBalancer_User.yml

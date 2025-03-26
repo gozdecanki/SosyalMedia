@@ -1,0 +1,19 @@
+#spring:
+#  cloud:
+#    config:
+#      uri: http://localhost:8888
+#  config:
+#    import: "configserver:"
+#  application:
+#    name: user-application
+
+
+#kubernate için düzenliyoruz
+spring:
+  cloud:
+    config:
+      uri: http://service-loadbalancer-config:8888
+  config:
+    import: "configserver:"
+  application:
+    name: user-application

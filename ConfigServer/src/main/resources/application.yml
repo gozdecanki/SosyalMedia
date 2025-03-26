@@ -1,0 +1,21 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server-git
+  cloud:
+    config:
+      server:
+        git:
+          uri: "https://github.com/gozdecanki/microservice-egitim-config-server.git"
+          default-label: "main" # github daki branch adınız
+          skip-ssl-validation: true
+          username: "gozdecanki"
+          password: ${GIT_KEY} # normalde github developer settings te classic token oluşturduk fakat açık açık yazmak doğru değil
+                               #bu yüzden modify options dan environment variable olarak ekledik
+
+
+
+
+
